@@ -4,8 +4,8 @@ pipeline {
         stage('Build') {
  
             steps {
-                sh 'sudo docker build ./EmployeeDB -t madhuhaas/nodejs:v0'
-                sh 'sudo docker push madhuhaas/nodejs:v0'
+                sh 'sudo -S docker build ./EmployeeDB -t madhuhaas/nodejs:v0'
+                sh 'sudo -S docker push madhuhaas/nodejs:v0'
             }
         }
     }
