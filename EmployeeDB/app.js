@@ -27,14 +27,14 @@ app.configure(function(){
 
 
 // catch 404 and forward to error handler
-app.use((req, res, next){
+app.use((req, res, next)  => {
   const err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
 
 // Error handler
-app.use((err, req, res, next){
+app.use((err, req, res, next)  => {
   // Set locals, only providing error in development
   res.locals.error = err;
   res.locals.error.status = err.status || 500;
