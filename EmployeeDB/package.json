@@ -9,6 +9,8 @@
     "express": "4.17.1",
     "jade": "*",
     "stylus": "*",
+    "babel-cli": "^6.0.0",
+    "babel-preset-es2015": "^6.0.0",
     "mongodb": ">= 0.9.6-7"
   }
 }
