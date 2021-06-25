@@ -11,7 +11,7 @@ var express = require('express')
 
 var app = express();
 
-app.configure(function(){
+//app.configure(function(){
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
@@ -23,7 +23,7 @@ app.configure(function(){
   app.use(app.router);
   app.use(require('stylus').middleware(__dirname + '/public'));
   app.use(express.static(path.join(__dirname, 'public')));
-});
+//});
 
 
 // catch 404 and forward to error handler
